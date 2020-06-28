@@ -18,6 +18,11 @@ func One(db *scribble.Driver, folder string, file string, entry *types.Fish) err
 		log.Fatal("Error", response)
 	}
 
+	fmt.Printf("\nREAD:\n\n")
+	fmt.Printf("	Collection: %v\n", folder)
+	fmt.Printf("	Object: %v\n", file)
+	fmt.Printf("	Data: %+v\n", entry)
+
 	return response
 }
 
@@ -35,6 +40,9 @@ func All(db *scribble.Driver) []types.Fish {
 			fmt.Println("Error", err)
 		}
 		results = append(results, resultFound)
+
+		fmt.Printf("\nREAD:\n\n")
+		fmt.Printf("	DATA: %v\n", resultFound)
 	}
 	return results
 }

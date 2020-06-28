@@ -1,8 +1,6 @@
 package cmd
 
 import (
-	"fmt"
-
 	"github.com/brittonhayes/godb/pkg/reading"
 	"github.com/brittonhayes/godb/pkg/types"
 
@@ -21,7 +19,6 @@ func Read(db *scribble.Driver) *cobra.Command {
 				//* Read a single fish from the database
 				entry := types.Fish{Name: args[1], Species: args[2]}
 				reading.One(db, args[0], args[1], &entry)
-				fmt.Println(entry)
 			},
 		}
 	)

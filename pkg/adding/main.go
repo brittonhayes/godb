@@ -15,5 +15,8 @@ func Single(db *scribble.Driver, folder string, file string, entry *types.Fish) 
 		fmt.Println("Error", err)
 	}
 
-	fmt.Println("adding.Single has run on:", folder, file, entry)
+	fmt.Printf("\nWRITE:\n\n")
+	fmt.Printf("	Collection: %v\n", folder)
+	fmt.Printf("	Object: %v\n", file)
+	fmt.Printf("	Data: %+v\n", entry)
 }
