@@ -16,7 +16,6 @@ func Read(db *scribble.Driver) *cobra.Command {
 			Short: "Read an entry from the database",
 			Args:  cobra.MinimumNArgs(3),
 			Run: func(cmd *cobra.Command, args []string) {
-				//* Read a single fish from the database
 				entry := types.Fish{Name: args[1], Species: args[2]}
 				reading.One(db, args[0], args[1], &entry)
 			},
