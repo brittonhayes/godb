@@ -14,7 +14,7 @@ A simple implementation of the [Golang Scribble](https://github.com/sdomino/scri
 1. Install the package from Github
 
 ```
-go get -u github.com/brittonhayes/go-json-crud
+go get -u github.com/brittonhayes/godb
 ```
 
 2. Set up your Go struct types in the `pkg/types/main.go` file.
@@ -24,7 +24,7 @@ go get -u github.com/brittonhayes/go-json-crud
 1. Navigate to the project directory
 
 ```
-cd $GOPATH/src/github.com/brittonhayes/go-json-crud
+cd $GOPATH/src/github.com/brittonhayes/godb
 ```
 
 2. Run the project from the entry point
@@ -37,7 +37,7 @@ go run main.go
 
 ## Support
 
-Please [open an issue](https://github.com/brittonhayes/go-json-crud/issues/new) for support.
+Please [open an issue](https://github.com/brittonhayes/godb/issues/new) for support.
 
 ## Contributing
 
