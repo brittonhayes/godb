@@ -13,7 +13,7 @@ func Read(db *scribble.Driver) *cobra.Command {
 	var (
 		readCmd = &cobra.Command{
 			Use:   "read [collection] [name] [species]",
-			Short: "Read an entry from the  database",
+			Short: "Read an entry from the database",
 			Args:  cobra.MinimumNArgs(3),
 			Run: func(cmd *cobra.Command, args []string) {
 				entry := types.Fish{Name: args[1], Species: args[2]}
