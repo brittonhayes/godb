@@ -1,6 +1,6 @@
 # Golang JSON CRUD Starter
 
-A simple implementation of the [Golang Scribble](https://github.com/sdomino/scribble) tiny JSON database.
+A simple implementation of the [Golang Scribble](https://github.com/sdomino/scribble) tiny JSON database. This repo gets you setup with a basic example project to make CRUD operations with JSON.
 
 ## Table of Contents :notebook:
 
